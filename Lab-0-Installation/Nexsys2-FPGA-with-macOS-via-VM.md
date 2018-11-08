@@ -6,32 +6,33 @@
 
 METHOD: By using the Free and Open-Source (FOSS) program VirtualBox provided by Oracle, combined with some specific dependency requirements, hypervisor interfacing, and port-forwarding settings.
 
-REQUIREMENTS:
-macOS (Mojave 10.14.1 tested)
-Windows 7 Ultimate (Windows 10 not tested)
-VirtualBox (5.2 tested)
-Guest Additions hypervisor interface
-Xilinx ISE Design Suite (14.7-1015-1)
-Xilinx Adept 2 System (2.19.2)
-PROCEDURE:
-Download and install VirtualBox 5.2 from https://www.virtualbox.org/
-Within VirtualBox, create a new Windows 7 Professional session
-[VM recommended init settings]
-Install Windows 7 on the initialized VM
-Install the Guest Additions hypervisor interface
-[install guide]
-Finalize the VM recommended settings:
-[final settings]
-Connect board, power on, wait 30 seconds for macOS to finish recognising
-create filter
-turn off board, unplug
-Start the Windows 7 VM, check that all updates are installed
-Download and Install ISE Design Suite - 14.7  Full Product Installation: Full DVD, Single File Download Image (7.78 GB)
-Download link: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
-[pic of DL]
-If needed, install 7-Zip to extract the TAR/GZ.
-Download link: https://www.7-zip.org/
-[pic]
+**REQUIREMENTS:**
+- macOS (Mojave 10.14.1 tested)
+- Windows 7 Ultimate (Windows 10 *not* tested)
+- VirtualBox (5.2 tested)
+  - Guest Additions hypervisor interface
+- Xilinx ISE Design Suite (14.7-1015-1)
+- Xilinx Adept 2 System (2.19.2)
+
+**PROCEDURE:**
+1. Download and install VirtualBox 5.2 from https://www.virtualbox.org/
+2. Within VirtualBox, create a new Windows 7 Professional session
+  1. [VM recommended init settings]
+  2. Install Windows 7 on the initialized VM
+  3. Install the *Guest Additions* hypervisor interface
+    1. [install guide]
+  4. Finalize the VM recommended settings:
+    1. [final settings]
+    2. Connect board, power on, wait 30 seconds for macOS to finish recognising
+      1. create filter
+      2. turn off board, unplug
+3. Start the Windows 7 VM, check that all updates are installed
+4. Download and Install *ISE Design Suite - 14.7  Full Product Installation: Full DVD, Single File Download Image* (7.78 GB)
+  1. Download link: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
+  2. [pic of DL]
+  3. If needed, install 7-Zip to extract the TAR/GZ
+	1. Download link: https://www.7-zip.org/
+	2. [pic	]
 Extract the entire folder to your desktop
 [pic of extracted folder]
 Start install by selecting [[[]]]
