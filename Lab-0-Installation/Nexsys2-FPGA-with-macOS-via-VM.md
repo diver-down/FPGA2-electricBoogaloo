@@ -17,22 +17,22 @@ METHOD: By using the Free and Open-Source (FOSS) program VirtualBox provided by 
 **PROCEDURE:**
 1. Download and install VirtualBox 5.2 from https://www.virtualbox.org/
 2. Within VirtualBox, create a new Windows 7 Professional session
-  1. [VM recommended init settings]
-  2. Install Windows 7 on the initialized VM
-  3. Install the *Guest Additions* hypervisor interface
-    1. [install guide]
-  4. Finalize the VM recommended settings:
-    1. [final settings]
-    2. Connect board, power on, wait 30 seconds for macOS to finish recognising
-      1. create filter
-      2. turn off board, unplug
+    1. [VM recommended init settings]
+    2. Install Windows 7 on the initialized VM
+    3. Install the *Guest Additions* hypervisor interface
+        1. [install guide]
+    4. Finalize the VM recommended settings:
+        1. [final settings]
+        2. Connect board, power on, wait 30 seconds for macOS to finish recognising
+            1. create filter
+            2. turn off board, unplug
 3. Start the Windows 7 VM, check that all updates are installed
 4. Download and Install *ISE Design Suite - 14.7  Full Product Installation: Full DVD, Single File Download Image* (7.78 GB)
-  1. Download link: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
-  2. [pic of DL]
-  3. If needed, install 7-Zip to extract the TAR/GZ
-    1. Download link: https://www.7-zip.org/
-    2. [pic	]
+    1. Download link: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
+    2. [pic of DL]
+    3. If needed, install 7-Zip to extract the TAR/GZ
+        1. Download link: https://www.7-zip.org/
+        2. [pic	]
 
 
 Extract the entire folder to your desktop
