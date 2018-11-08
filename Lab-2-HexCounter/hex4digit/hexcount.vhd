@@ -15,7 +15,7 @@
 -- Revision: 
 -- Revision 0.01 - File Created
 -- Additional Comments: 
---
+-- adding change 
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -41,7 +41,7 @@ Port ( sel : in STD_LOGIC_VECTOR (1 downto 0);
 end component;
 
 component leddec is
-Port ( mpx : in STD_LOGIC_VECTOR (1 downto 0);
+Port ( mpx : in STD_LOGIC_VECTOR (1 downto 0); 
 		data : in STD_LOGIC_VECTOR (3 downto 0);
 		anode : out STD_LOGIC_VECTOR (3 downto 0);
 		seg : out STD_LOGIC_VECTOR (6 downto 0));
