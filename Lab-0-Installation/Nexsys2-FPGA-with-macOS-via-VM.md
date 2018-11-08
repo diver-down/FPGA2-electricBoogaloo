@@ -31,8 +31,10 @@ METHOD: By using the Free and Open-Source (FOSS) program VirtualBox provided by 
   1. Download link: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
   2. [pic of DL]
   3. If needed, install 7-Zip to extract the TAR/GZ
-	1. Download link: https://www.7-zip.org/
-	2. [pic	]
+    1. Download link: https://www.7-zip.org/
+    2. [pic	]
+
+
 Extract the entire folder to your desktop
 [pic of extracted folder]
 Start install by selecting [[[]]]
