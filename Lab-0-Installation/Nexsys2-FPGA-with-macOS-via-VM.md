@@ -1,4 +1,5 @@
 # Using the Digilent Nexsys 2 FPGA board with macOS via VM
+## IDE: ISE Design Suite (Web Pack)
 
 *A complete guide!*
 
