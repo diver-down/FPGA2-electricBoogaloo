@@ -33,11 +33,10 @@ component counter is
 			 count : out STD_LOGIC_VECTOR (15 downto 0);
 		    mpx : out STD_LOGIC_VECTOR (1 downto 0));
 end component;
-
-component mux is 
+component mymux is 
 Port ( sel : in STD_LOGIC_VECTOR (1 downto 0);
 		 A : in STD_LOGIC_VECTOR (15 downto 0);
-		 B : out STD_LOGIC_VECTOR (3 downto 0);
+		 B : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
 
 component leddec is
@@ -50,8 +49,9 @@ end component;
 signal F : STD_LOGIC_VECTOR (1 downto 0);
 signal S : STD_LOGIC_VECTOR (15 downto 0);
 signal data_1 : STD_LOGIC_VECTOR (3 downto 0);
-	
+
+begin 
 C1 : counter port map (clk=>clk_50MHz, count=>S, mpx => F);
-L1 : leddec port map (mpx => F, data=>data, anode=>anode, seg=>seg);
+L1 : leddec port map (mpx => F, data=>data_1, anode=>anode, seg=>seg);
 mux : mymux port map (sel => F, A => S, B => data_1);
 end Behavioral;

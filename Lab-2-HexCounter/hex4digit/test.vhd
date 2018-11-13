@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    13:34:51 11/08/2018 
+-- Create Date:    16:05:15 11/08/2018 
 -- Design Name: 
--- Module Name:    mux - Behavioral 
+-- Module Name:    test - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -20,21 +20,22 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity mymux is
-Port( sel : in STD_LOGIC_VECTOR (1 downto 0);
-  A: in STD_LOGIC_VECTOR (15 downto 0);
-  B : out STD_LOGIC_VECTOR (3 downto 0));
-end mymux;
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
 
-architecture Behavioral of mymux is
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity test is
+end test;
+
+architecture Behavioral of test is
 
 begin
-with sel select
-B    <= A( 3 downto 0) when "00",
-		  A( 7 downto 4) when "01",
-		  A(11 downto 8) when "10",
-		  A(15 downto 12) when "11",
-		  (others => '0') when others;
+
 
 end Behavioral;
 

@@ -47,8 +47,8 @@ seg <= "0000001" when data="0000" else --0
 "1111111";
 -- Turn on anode of 7-segment display addressed by 2-bit digit selector dig
 anode <= "1110" when mpx="00" else --0
-"1101" when mpx="01" else --1
-"1011" when mpx="10" else --2
-"0111" when mpx="11" else --3
-"1111";
+			"1101" when mpx="01" else --1
+			"1011" when mpx="10" else --2
+			"0111" when mpx="11" else --3		
+			"1111";
 end Behavioral;
