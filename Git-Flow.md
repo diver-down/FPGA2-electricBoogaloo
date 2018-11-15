@@ -6,6 +6,14 @@ At start of work:
 	- this will let you see all work done since
 - open your project and go to town!
 
+* * *
+
+Every time you save your work:
+
+- `git pull`
+
+* * *
+
 At end of work:
 - `git pull`
 - `git status`
