@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o "C:\Users\Tom\Desktop\DSD Stuff\labs\FPGA2-electricBoogaloo\Lab-2-HexCounter\hex4digit\//hexcount" -x xcf04s -u 00000000 "C:/Users/Tom/Desktop/DSD Stuff/labs/FPGA2-electricBoogaloo/Lab-2-HexCounter/hex4digit/hexcount.bit" 
+
+PROM C:\Users\Tom\Desktop\DSD Stuff\labs\FPGA2-electricBoogaloo\Lab-2-HexCounter\hex4digit\hexcount.prm map: Thu Nov 15 12:28:59 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 03a8bfed
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0004:547f     Nov 12 23:16:54 2018 C:/Users/Tom/Desktop/DSD Stuff/labs/FPGA2-electricBoogaloo/Lab-2-HexCounter/hex4digit/hexcount.bit

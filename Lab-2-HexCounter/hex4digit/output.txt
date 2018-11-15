@@ -1,0 +1,9 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf04s          [4 M]
+FF
+hexcount
+C:\Users\Tom\Desktop\DSD Stuff\labs\FPGA2-electricBoogaloo\Lab-2-HexCounter\hex4digit/
+
+MCS
+No
