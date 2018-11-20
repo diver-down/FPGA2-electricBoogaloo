@@ -1,3 +1,5 @@
+# CREDIT TO: Professor Bryan Ackland, C.D., S.J., T.J., Y.C.
+
 NET "clk_50MHz" LOC = B8;
 NET "vga_hsync" LOC = T4;
 NET "vga_vsync" LOC = U3;
