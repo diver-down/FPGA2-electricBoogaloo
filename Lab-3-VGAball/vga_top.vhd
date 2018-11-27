@@ -77,5 +77,6 @@ begin
 		pixel_col   => S_pixel_col,
 		hsync       => vga_hsync,
 		vsync       => S_vsync);
+		
 	vga_vsync <= S_vsync; --connect output vsync
 end Behavioral;
