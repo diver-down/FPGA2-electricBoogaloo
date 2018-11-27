@@ -13,12 +13,14 @@ entity vga_top is
 		vga_hsync : out STD_LOGIC;
 		vga_vsync : out STD_LOGIC);
 end vga_top;
+
 architecture Behavioral of vga_top is
 	signal ck_25                    : STD_LOGIC;
 	-- internal signals to connect modules
 	signal S_red, S_green, S_blue   : STD_LOGIC;
 	signal S_vsync                  : STD_LOGIC;
 	signal S_pixel_row, S_pixel_col : STD_LOGIC_VECTOR (9 downto 0);
+
 	component ball is
 		port (
 			v_sync    : in STD_LOGIC;
@@ -43,6 +45,7 @@ architecture Behavioral of vga_top is
 			pixel_row   : out STD_LOGIC_VECTOR (9 downto 0);
 			pixel_col   : out STD_LOGIC_VECTOR (9 downto 0));
 	end component;
+
 begin
 	-- Process to generate 25 MHz clock from 50 MHz system clock
 	ckp : process

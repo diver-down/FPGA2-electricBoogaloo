@@ -5,6 +5,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
+
 entity ball is
 	port (
 		v_sync    : in STD_LOGIC;
@@ -14,6 +15,7 @@ entity ball is
 		green     : out STD_LOGIC;
 		blue      : out STD_LOGIC);
 end ball;
+
 architecture Behavioral of ball is
 	constant size        : integer := 8;
 	signal ball_on       : STD_LOGIC; -- indicates whether ball is over current pixel position

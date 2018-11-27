@@ -36,10 +36,11 @@ begin
 			h_cnt <= h_cnt + 1;
 		end if;
 		if (h_cnt >= 659) and (h_cnt <= 755) then
-			hsync                        <= '0';
+			hsync <= '0';
 		else
 			hsync <= '1';
 		end if;
+		--
 		-- Generate Vertical Timing Signals for Video Signal
 		-- v_cnt counts lines down screen (525 total = 480 active + extras for sync and blanking)
 		-- Active picture for 0 <= v_cnt <= 479
@@ -50,7 +51,7 @@ begin
 			v_cnt <= v_cnt + 1;
 		end if;
 		if (v_cnt >= 493) and (v_cnt <= 494) then
-			vsync                        <= '0';
+			vsync <= '0';
 		else
 			vsync <= '1';
 		end if;
@@ -62,6 +63,7 @@ begin
 		end if;
 		pixel_col <= h_cnt;
 		pixel_row <= v_cnt;
+		--
 		-- Register video to clock edge and suppress video during blanking and sync periods
 		red_out   <= red and video_on;
 		green_out <= green and video_on;
