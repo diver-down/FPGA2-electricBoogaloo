@@ -55,7 +55,7 @@ begin
 		if ball_x + size >= 640 then
 			ball_x_motion <= "1111111100";
 		elsif ball_x <= size then
-			ball_x_motion <= "1111111100";
+			ball_x_motion <= "0000000100";
 		end if;
 		ball_x <= ball_x + ball_x_motion;
 	end process;
