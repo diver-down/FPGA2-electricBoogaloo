@@ -1,1 +1,21 @@
-# CREDIT TO: Professor Bryan Ackland, C.D., S.J., T.J., Y.C.
+# CREDIT TO: Professor Bryan Ackland, C.D., S.J., T.J., Y.C., S.M.
+
+NET "clk_50MHZ" LOC = B8;
+NET "clk_50MHZ" TNM_NET = ck_50_net;
+TIMESPEC TS_ck_50 = PERIOD "ck_50_net" 20 ns HIGH 50%;
+
+NET "dac_SDIN" LOC = M15;
+NET "dac_SCLK" LOC = L17;
+NET "dac_LRCK" LOC = K12;
+NET "dac_MCLK" LOC = L15;
+
+NET "BTN0" LOC = B18;
+
+NET "SW(0)" LOC = G18;
+NET "SW(1)" LOC = H18;
+NET "SW(2)" LOC = K18;
+NET "SW(3)" LOC = K17;
+NET "SW(4)" LOC = L14;
+NET "SW(5)" LOC = L13;
+NET "SW(6)" LOC = N17;
+NET "SW(7)" LOC = R17;
