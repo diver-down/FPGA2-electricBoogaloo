@@ -23,7 +23,7 @@ architecture Behavioral of ball is
 	signal ball_x        : STD_LOGIC_VECTOR(9 downto 0) := CONV_STD_LOGIC_VECTOR(320, 10);
 	signal ball_y        : STD_LOGIC_VECTOR(9 downto 0) := CONV_STD_LOGIC_VECTOR(240, 10);
 	-- current ball motion - initialized to +4 pixels/frame
-	signal ball_x_motion : STD_LOGIC_VECTOR(9 downto 0) := "0000001010";
+	signal ball_x_motion : STD_LOGIC_VECTOR(9 downto 0) := "0000000100";
 	signal ball_y_motion : STD_LOGIC_VECTOR(9 downto 0) := "0000000100";
 begin
 	red   <= '1'; -- color setup for red ball on white background
@@ -52,5 +52,11 @@ begin
 			ball_y_motion <= "0000000100"; -- +4 pixels
 		end if;
 		ball_y <= ball_y + ball_y_motion; -- compute next ball position
+		if ball_x + size >= 640 then
+			ball_x_motion <= "1111111100";
+		elsif ball_x <= size then
+			ball_x_motion <= "1111111100";
+		end if;
+		ball_x <= ball_x + ball_x_motion;
 	end process;
 end Behavioral;
