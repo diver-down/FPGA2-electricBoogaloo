@@ -50,6 +50,8 @@ begin
 		else
 		index - 16383 when quad = "10" and gen_Square = '0'
 		else
-		to_signed( - 16383, 16) when quad = "10" and gen_Square = '1'; -- 4th quadrant
+		to_signed( - 16383, 16) when quad = "10" and gen_Square = '1' -- 4th quadrant
+		else
+		index;
 
 end Behavioral;
