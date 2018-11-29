@@ -1,21 +1,5 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    12:59:53 11/15/2018 
--- Design Name: 
--- Module Name:    leddec16 - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- CREDIT TO: Professor Bryan Ackland, C.D., S.J., T.J., Y.C.
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -57,4 +41,4 @@ anode <= "1110" when dig="00" and data /=x"0000" else -- digit 0
 "1011" when dig="10" and data(15 downto 8) /=x"00" else -- digit 2
 "0111" when dig="11" and data(15 downto 12) /=x"0" else -- digit 3
 "1111";
-end Behavioral; 
+end Behavioral;

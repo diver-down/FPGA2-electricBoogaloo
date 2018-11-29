@@ -1,21 +1,5 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    13:02:05 11/15/2018 
--- Design Name: 
--- Module Name:    hexcalc - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- CREDIT TO: Professor Bryan Ackland, C.D., S.J., T.J., Y.C.
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -114,7 +98,7 @@ plusYes := '1';
 subYes :='0';
 --AddOrSub <='0';
 
-elsif bt_sub ='1' then 
+elsif bt_sub ='1' then
 nx_state <= START_OP;
 plusYes := '0';
 subYes :='1';

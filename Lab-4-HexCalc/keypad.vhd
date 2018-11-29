@@ -1,21 +1,5 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    12:47:18 11/15/2018 
--- Design Name: 
--- Module Name:    keypad - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- CREDIT TO: Professor Bryan Ackland, C.D., S.J., T.J., Y.C.
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -78,4 +62,4 @@ else hit <= '0'; value <= X"0";
 end if;
 end process;
 col <= curr_col;
-end Behavioral; 
+end Behavioral;
