@@ -94,8 +94,16 @@ mball: process
 			(ball_x - bsize/2) <= (bat_x + bat_w) and
 			(ball_y + bsize/2) >= (bat_y - bat_h) and
 			(ball_y - bsize/2) <= (bat_y + bat_h) then
-			ball_y_motion <= (not ball_speed) + 1; -- set vspeed to (- ball_speed) pixels
-		end if;
+			 ball_y_motion <= (not ball_speed) + 1; -- set vspeed to (- ball_speed) pixels
+				if bat_w=0 then 
+					game_on <='0';
+				else 
+					bat_w<= bat_w -1;
+					end if;
+			end if;
+		if ball_y+bsize>=480 then
+			bat_w<=40;
+	   end if;
  -- compute next ball vertical position
  -- variable temp adds one more bit to calculation to fix unsigned underflow problems
  -- when ball_y is close to zero and ball_y_motion is negative
