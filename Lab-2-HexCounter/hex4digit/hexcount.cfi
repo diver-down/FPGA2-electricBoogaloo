@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE            11/15/2018 - 12:28
-SOURCE          C:\Users\Tom\Desktop\DSD Stuff\labs\FPGA2-electricBoogaloo\Lab-2-HexCounter\hex4digit\hexcount.mcs
+DATE            11/20/2018 - 14:31
+SOURCE          C:\Users\user\FPGA2-electricBoogaloo\Lab-2-HexCounter\hex4digit\hexcount.mcs
 DEVICE          XCF04S
 DATA_WIDTH      8
 FILL_DATA       0xFF
 SIGNATURE       0x03A8BFED
-START_ADDRESS   0x00000000 END_ADDRESS 0x0004547F DIRECTION_UP   "C:/Users/Tom/Desktop/DSD Stuff/labs/FPGA2-electricBoogaloo/Lab-2-HexCounter/hex4digit/hexcount.bit" 3s500efg320
+START_ADDRESS   0x00000000 END_ADDRESS 0x0004547F DIRECTION_UP   "C:/Users/user/FPGA2-electricBoogaloo/Lab-2-HexCounter/hex4digit/hexcount_cclktemp.bit" 3s500efg320
