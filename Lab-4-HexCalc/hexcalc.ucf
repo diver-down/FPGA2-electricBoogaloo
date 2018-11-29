@@ -7,6 +7,7 @@ NET "KB_row(1)" LOC = M16;
 NET "KB_row(2)" LOC = M14;
 NET "KB_row(3)" LOC = L16;
 NET "KB_row(4)" LOC = K13;
+NET "bt_sub" LOC = E18; #BTN2
 NET "bt_clr" LOC = H13; # BTN3
 NET "bt_plus" LOC = B18; # BTN0
 NET "bt_eq" LOC = D18; # BTN1

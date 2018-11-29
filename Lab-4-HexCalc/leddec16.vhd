@@ -52,9 +52,9 @@ seg <= "0000001" when data4="0000" else --0
 "0111000" when data4="1111" else --F
 "1111111";
 -- Turn on anode of 7-segment display addressed by 2-bit digit selector dig
-anode <= "1110" when dig="00" else -- digit 0
-"1101" when dig="01" else -- digit 1
-"1011" when dig="10" else -- digit 2
-"0111" when dig="11" else -- digit 3
+anode <= "1110" when dig="00" and data /=x"0000" else -- digit 0
+"1101" when dig="01" and data(15 downto 4) /=x"000" else -- digit 1
+"1011" when dig="10" and data(15 downto 8) /=x"00" else -- digit 2
+"0111" when dig="11" and data(15 downto 12) /=x"0" else -- digit 3
 "1111";
 end Behavioral; 
