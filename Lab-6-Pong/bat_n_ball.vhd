@@ -17,7 +17,7 @@ end bat_n_ball;
 architecture Behavioral of bat_n_ball is
 
 constant bsize: integer:=8; -- ball size in pixels
-constant bat_w: integer:=20; -- bat width in pixels
+-- constant bat_w: integer:=20; -- bat width in pixels
 constant bat_h: integer:=3; -- bat height in pixels
 
 signal bat_w: integer:=40;
