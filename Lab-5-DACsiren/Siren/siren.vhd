@@ -57,12 +57,10 @@ begin
 	begin
 		wait until rising_edge(clk_50MHz);
 		if (tcount(9 downto 0) >= X"00F") and (tcount(9 downto 0) < X"02E") then
-			dac_load_L      <= '1';
-		else dac_load_L <= '0';
+			dac_load_L <= '1'; else dac_load_L <= '0';
 		end if;
 		if (tcount(9 downto 0) >= X"20F") and (tcount(9 downto 0) < X"22E") then
-			dac_load_R      <= '1';
-		else dac_load_R <= '0';
+			dac_load_R <= '1'; else dac_load_R <= '0';
 		end if;
 		tcount <= tcount + 1;
 	end process;

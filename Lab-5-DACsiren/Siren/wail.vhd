@@ -40,13 +40,10 @@ begin
 		variable updn : std_logic;
 	begin
 		wait until rising_edge(wclk);
-		if curr_pitch >= hi_pitch then
-			updn := '0'; -- check to see if still in range
-		elsif curr_pitch <= lo_pitch then
-			updn := '1'; -- if not, adjust updn
+		if curr_pitch >= hi_pitch then updn := '0'; -- check to see if still in range
+		elsif curr_pitch <= lo_pitch then updn := '1'; -- if not, adjust updn
 		end if;
-		if updn = '1' then
-			curr_pitch      <= curr_pitch + wspeed; -- modulate pitch according to
+		if updn = '1' then curr_pitch <= curr_pitch + wspeed; -- modulate pitch according to
 		else curr_pitch <= curr_pitch - wspeed; -- current value of updn
 		end if;
 	end process;
